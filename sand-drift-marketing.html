@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sand Drift / تطعيس — Desert Drift Racing for iPhone</title>
+<meta name="description" content="Sand Drift / تطعيس is a desert offroad drift game for iPhone. Drive a 4x4 across endless Saudi-style dunes. Free on the App Store.">
+<style>
+  :root {
+    --sand:   #e2b265;
+    --dune:   #b67620;
+    --sky:    #87b6d9;
+    --dark:   #1a1410;
+    --ink:    #2a221b;
+    --paper:  #fdf8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--sky) 0%, #f5d8a8 55%, var(--sand) 100%);
+    min-height: 100vh;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  .hero { padding: 80px 0 60px; text-align: center; }
+  .hero h1 {
+    font-size: 4.5em; font-weight: 900; color: var(--dark);
+    letter-spacing: -2px; line-height: 1.05; margin-bottom: 8px;
+  }
+  .hero .title-ar {
+    font-size: 3.2em; font-weight: 900; color: var(--dune);
+    margin-bottom: 18px; direction: rtl;
+  }
+  .hero .tagline {
+    font-size: 1.5em; font-weight: 500; color: var(--ink);
+    max-width: 640px; margin: 0 auto 12px;
+  }
+  .hero .tagline-ar {
+    font-size: 1.3em; font-weight: 500; color: var(--ink);
+    direction: rtl; max-width: 640px; margin: 0 auto 36px;
+  }
+
+  .features {
+    background: var(--paper); padding: 70px 0; margin-top: 60px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+  .features h2 { text-align: center; font-size: 2.2em; margin-bottom: 50px; color: var(--dark); }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+  }
+  .feature { text-align: center; padding: 16px; }
+  .feature .icon { font-size: 3em; margin-bottom: 12px; }
+  .feature h3 { font-size: 1.2em; color: var(--dune); margin-bottom: 8px; }
+  .feature p { color: #555; }
+
+  .about { padding: 70px 0; text-align: center; background: var(--paper); }
+  .about p {
+    max-width: 720px; margin: 0 auto 18px; color: #444; font-size: 1.1em;
+  }
+  .about .ar { direction: rtl; }
+
+  footer {
+    background: var(--dark); color: #c7b29a; padding: 50px 0 40px; text-align: center;
+  }
+  footer a { color: var(--sand); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .links { margin-bottom: 18px; }
+  footer .links a { margin: 0 14px; }
+  footer .copy { font-size: 0.9em; opacity: 0.7; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 3em; letter-spacing: -1px; }
+    .hero .title-ar { font-size: 2.4em; }
+    .hero .tagline { font-size: 1.15em; }
+    .hero .tagline-ar { font-size: 1.05em; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <h1>Sand Drift</h1>
+    <div class="title-ar">تطعيس</div>
+    <p class="tagline">Drift your 4×4 across endless desert dunes. Pure Saudi-style off-road.</p>
+    <p class="tagline-ar">طعّس بسيارتك في الكثبان الذهبية. تجربة قيادة سعودية أصيلة.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">🏜️</div>
+        <h3>Open Desert</h3>
+        <p>Roam an endless dune world inspired by the Saudi Empty Quarter.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🚙</div>
+        <h3>Real 4×4 Physics</h3>
+        <p>Authentic suspension and tire feel powered by Realistic Car Controller.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎯</div>
+        <h3>No Pressure</h3>
+        <p>No timers, no scores. Just you, the sand, and the engine.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🌅</div>
+        <h3>Warm Sky</h3>
+        <p>Morning light over the dunes for that desert sunrise feeling.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔧</div>
+        <h3>Quick Restore</h3>
+        <p>Stuck or flipped? Tap the wrench to reset and keep drifting.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📱</div>
+        <h3>iPhone Native</h3>
+        <p>Designed for iOS, optimized for iPhone with safe-area support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <h2 style="color: var(--dark); margin-bottom: 24px;">About</h2>
+    <p>Made by Saudi hands · صُنعت بأيدٍ سعودية</p>
+    <p style="margin-top: 18px;">Sand Drift captures the simple joy of desert driving — climbing dunes, drifting across the soft sand, watching the sunset over an empty horizon.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="links">
+      <a href="index.html">Privacy Policy</a>
+      <a href="mailto:abdulaziz.h1407@gmail.com">Contact</a>
+    </div>
+    <div class="copy">© 2026 Abdulaziz Alharbi · All rights reserved</div>
+  </div>
+</footer>
+
+</body>
+</html>
