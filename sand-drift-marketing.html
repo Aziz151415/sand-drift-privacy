@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sand Drift / تطعيس — Desert Drift Game for iPhone</title>
+<meta name="description" content="Sand Drift / تطعيس is a free desert offroad drift game for iPhone. Drive a 4x4 across endless dunes.">
+<style>
+  :root {
+    --sand:   #e2b265;
+    --dune:   #b67620;
+    --sky:    #87b6d9;
+    --dark:   #1a1410;
+    --ink:    #2a221b;
+    --paper:  #fdf8f0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--sky) 0%, #f5d8a8 55%, var(--sand) 100%);
+    min-height: 100vh;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  .hero {
+    padding: 90px 0 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+    background: url('sand-drift-icon.png') center/contain no-repeat;
+    opacity: 0.18;
+    border-radius: 90px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero .container { position: relative; z-index: 1; }
+  .hero h1 {
+    font-size: 4.5em; font-weight: 900; color: var(--dark);
+    letter-spacing: -2px; line-height: 1.05; margin-bottom: 8px;
+  }
+  .hero .title-ar {
+    font-size: 3.2em; font-weight: 900; color: var(--dune);
+    margin-bottom: 24px; direction: rtl;
+  }
+  .hero .tagline {
+    font-size: 1.5em; font-weight: 500; color: var(--ink);
+    max-width: 640px; margin: 0 auto 12px;
+  }
+  .hero .tagline-ar {
+    font-size: 1.3em; font-weight: 500; color: var(--ink);
+    direction: rtl; max-width: 640px; margin: 0 auto;
+  }
+
+  .features {
+    background: var(--paper); padding: 70px 0; margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  }
+  .features h2 { text-align: center; font-size: 2.2em; margin-bottom: 50px; color: var(--dark); }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+  }
+  .feature { text-align: center; padding: 16px; }
+  .feature .icon { font-size: 3em; margin-bottom: 12px; }
+  .feature h3 { font-size: 1.2em; color: var(--dune); margin-bottom: 8px; }
+  .feature p { color: #555; }
+
+  footer {
+    background: var(--dark); color: #c7b29a; padding: 40px 0 30px; text-align: center;
+  }
+  footer a { color: var(--sand); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 3em; letter-spacing: -1px; }
+    .hero .title-ar { font-size: 2.4em; }
+    .hero .tagline { font-size: 1.15em; }
+    .hero .tagline-ar { font-size: 1.05em; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <h1>Sand Drift</h1>
+    <div class="title-ar">تطعيس</div>
+    <p class="tagline">Drift your 4×4 across endless desert dunes.</p>
+    <p class="tagline-ar">طعّس بسيارتك في الكثبان الذهبية اللانهائية.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">🏜️</div>
+        <h3>Open Desert</h3>
+        <p>Endless dunes to explore — no walls, no limits.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">⚙️</div>
+        <h3>4×4 Physics</h3>
+        <p>Realistic suspension and tire feel for true offroad driving.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎯</div>
+        <h3>No Pressure</h3>
+        <p>No timers, no scores — just you, the sand, and the engine.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🌅</div>
+        <h3>Warm Sky</h3>
+        <p>Beautiful morning light over the desert horizon.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔧</div>
+        <h3>Quick Fix</h3>
+        <p>Stuck or flipped? Tap the wrench to reset and keep drifting.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📱</div>
+        <h3>iPhone Ready</h3>
+        <p>Optimized for iOS, works offline, no internet required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <a href="index.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
