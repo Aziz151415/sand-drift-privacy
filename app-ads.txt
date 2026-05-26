@@ -1,0 +1,30 @@
+# Sand Drift — app-ads.txt
+# IAB OpenRTB authorized digital sellers
+# Last updated: 2026-05-26
+
+# ─── DIRECT (your own seller relationships) ───────────────
+
+# Unity Ads — Developer ID 6299265 (Alharbi111 organization)
+unityads.unity3d.com, 6299265, DIRECT
+
+# Google AdMob — Publisher ID pub-2837856048962171
+google.com, pub-2837856048962171, DIRECT, f08c47fec0942fa0
+
+# ─── RESELLER (Unity Ads partner sellers — from Unity dashboard) ───
+# Source: https://cloud.unity.com → Monetization → Organization Settings
+# Re-check this list monthly; Unity adds/removes partners over time.
+
+adagio.io, 1522, RESELLER
+adagio.io, 1575, RESELLER
+adform.com, 3400, RESELLER, 9f5210a2f0999e32
+admanmedia.com, 2242, RESELLER
+adyoulike.com, aff404dd1a704f379acae5190701c9c2, RESELLER
+adyoulike.com, f78b24039641337f06634ab9a3da4b48, RESELLER
+algorix.co, 54616, RESELLER, 5b394c12fea27a1d
+anzu.io, 691e95644e633a6eee2567ee, RESELLER, 1c1b7acf4992136c
+app-stock.com, 256917, RESELLER
+app-stock.com, 358747, RESELLER
+
+# TODO: open Unity dashboard → click "Show full list" → paste remaining
+# RESELLER lines below this marker.
+
